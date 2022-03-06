@@ -4,20 +4,26 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(summAandB(-15, 10));
         positiveOrNegative(1000);
+        System.out.println(falseIfNegativeAndTrueIfPositive(-10));
     }
-
     static boolean summAandB(int a, int b) {
         return (a + b) >= 10 && (a + b) <= 20;
     }
-    public static void positiveOrNegative (int a){
-        if(a>=0){
+    public static void positiveOrNegative(int a) {
+        if (a >= 0) {
             System.out.println("Положительное");
-        }else {
+        } else {
             System.out.println("Отрицательное");
         }
-
     }
-
+    public static boolean falseIfNegativeAndTrueIfPositive(int a) {
+        //     return a < 0 ? true : false;
+        if (a < 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
 
 
