@@ -7,11 +7,9 @@ public class Main {
         System.out.println(falseIfNegativeAndTrueIfPositive(-10));
         stringLooptimes("hgf", 10);
     }
-
     static boolean summAandB(int a, int b) {
         return (a + b) >= 10 && (a + b) <= 20;
     }
-
     public static void positiveOrNegative(int a) {
         if (a >= 0) {
             System.out.println("Положительное");
@@ -19,7 +17,6 @@ public class Main {
             System.out.println("Отрицательное");
         }
     }
-
     public static boolean falseIfNegativeAndTrueIfPositive(int a) {
         //     return a < 0 ? true : false;
         if (a < 0) {
@@ -28,12 +25,13 @@ public class Main {
             return false;
         }
     }
-
     public static void stringLooptimes(String a, int b) {
         for (int i = 0; i < b; i++) {
             System.out.println(a);
-
         }
+    }
+    public static boolean leapYearsOrNot(int b) {
+        return (b % 4 == 0 && b % 100 != 0 || b % 400 == 0);
     }
 }
 
